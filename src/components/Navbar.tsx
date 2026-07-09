@@ -85,7 +85,7 @@ export default function Navbar() {
                 <Code2 className="w-5 h-5 text-teal-400 group-hover:text-teal-300 transition-colors" />
               </div>
             </div>
-            <span>JB<span className="text-teal-400 group-hover:text-violet-400 transition-colors">.</span></span>
+            <span className="text-teal-400 group-hover:text-violet-400 transition-colors">JB</span>
           </a>
 
           {/* Desktop Links */}
