@@ -1,5 +1,7 @@
 import { Project, Skill, Experience, AchievementStat } from './types';
 
+export const siteUrl = "https://jaydeep-portfolio-three.vercel.app";
+
 export const personalInfo = {
   name: "Jaydeep Bodar",
   title: "Full Stack Developer (MERN)",
