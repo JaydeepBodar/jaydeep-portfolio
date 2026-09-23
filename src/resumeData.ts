@@ -27,14 +27,14 @@ Full Stack Developer | Sigma Solve
 Dec 2024 - Present
 
 * BlendX - Gym Subscription Management SaaS
-  Tech Stack: Remix.js, React.js, Node.js, Prisma ORM, AWS S3, Payment Gateway APIs, Server-Side Rendering (SSR)
+  Tech Stack: Remix.js, Prisma ORM, AWS S3, Payment Gateway APIs, Server-Side Rendering (SSR)
   - Built subscription workflows (create, renew, cancel, upgrade) using Remix.js with server-side rendering for faster page loads.
   - Created an admin dashboard and customer portal to manage amenities and pricing in real time.
   - Used AWS S3 to securely store and manage subscription-related documents.
   - Automated billing and reporting with payment APIs and Prisma ORM, improving efficiency and query speed.
 
 * TMS - Transportation Management System
-  Tech Stack: Next.js, React.js, Tailwind CSS, REST APIs, Reusable Component Architecture
+  Tech Stack: Next.js, Tailwind CSS, REST APIs, Reusable Component Architecture
   - Built a logistics platform with Next.js and Tailwind CSS for carrier onboarding, driver assignment, and multi-level orders.
   - Created a finance dashboard to track revenue, vendor pricing, and order-level costs in real time.
   - Managed document verification and carrier ratings to maintain service quality.
@@ -48,7 +48,7 @@ Dec 2024 - Present
   - Integrated Margin, Deposit, Withdraw, and Transfer APIs for secure transactions.
 
 * Value Collaborate Platform
-  Tech Stack: React.js, Next.js, TypeScript, Tailwind CSS, ShadCN UI, Google OAuth, JWT, RBAC, REST APIs
+  Tech Stack: Next.js, TypeScript, Tailwind CSS, ShadCN UI, Google OAuth, JWT, RBAC, REST APIs
   - Built a multi-tenant SaaS platform for enterprise collaboration and business planning.
   - Added secure login with Google OAuth, JWT, and role-based access control (RBAC) for multiple user types.
   - Built live recording sessions with real-time transcription and AI-assisted workflows.

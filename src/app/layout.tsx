@@ -1,7 +1,6 @@
 import { ReactNode } from 'react';
 import { Metadata } from 'next';
 import { Inter, Outfit } from 'next/font/google';
-import { ThemeProvider } from '../context/ThemeContext';
 import '../index.css';
 
 const inter = Inter({
@@ -27,11 +26,9 @@ export default function RootLayout({
   children: ReactNode;
 }) {
   return (
-    <html lang="en" className="scroll-smooth" suppressHydrationWarning>
+    <html lang="en" className="scroll-smooth">
       <body className={`${inter.variable} ${outfit.variable} bg-[#030712] text-slate-100 antialiased selection:bg-teal-500/30 selection:text-teal-200`}>
-        <ThemeProvider>
-          {children}
-        </ThemeProvider>
+        {children}
       </body>
     </html>
   );

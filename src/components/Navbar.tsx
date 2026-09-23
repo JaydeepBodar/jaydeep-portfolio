@@ -1,14 +1,12 @@
 import { useState, useEffect } from 'react';
-import { Menu, X, ArrowUpRight, Code2, Sun, Moon } from 'lucide-react';
+import { Menu, X, ArrowUpRight, Code2 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { personalInfo } from '../data';
-import { useTheme } from '../context/ThemeContext';
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const { theme, toggleTheme } = useTheme();
 
   const navLinks = [
     { name: 'Home', href: '#home' },
@@ -119,36 +117,12 @@ export default function Navbar() {
               })}
             </ul>
 
-            {/* Theme Toggle */}
-            <button
-              onClick={toggleTheme}
-              className="p-2.5 rounded-full bg-slate-900/40 hover:bg-slate-800/60 border border-white/10 hover:border-white/20 text-slate-300 hover:text-white transition-all cursor-pointer flex items-center justify-center"
-              aria-label="Toggle visual theme"
-            >
-              {theme === 'dark' ? <Sun className="w-4 h-4 text-amber-400" /> : <Moon className="w-4 h-4 text-violet-400" />}
-            </button>
-
             {/* CTA button */}
-            <button
-              onClick={() => handleLinkClick('#contact')}
-              className="relative overflow-hidden inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider text-slate-950 bg-teal-400 hover:bg-teal-300 transition-all duration-300 group shadow-md shadow-teal-500/20 hover:scale-105 cursor-pointer"
-            >
-              Contact Me
-              <ArrowUpRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-            </button>
+
           </div>
 
           {/* Mobile Menu Toggle */}
           <div className="flex md:hidden items-center gap-2">
-            {/* Mobile Theme Toggle */}
-            <button
-              onClick={toggleTheme}
-              className="p-2 rounded-xl bg-slate-900/40 hover:bg-slate-800/60 border border-white/5 text-slate-300 hover:text-white transition-all cursor-pointer flex items-center justify-center"
-              aria-label="Toggle visual theme"
-            >
-              {theme === 'dark' ? <Sun className="w-4 h-4 text-amber-400" /> : <Moon className="w-4 h-4 text-violet-400" />}
-            </button>
-
             <button
               onClick={() => handleLinkClick('#contact')}
               className="inline-flex items-center px-3 py-1.5 rounded-full text-xs font-semibold text-teal-400 bg-teal-500/10 border border-teal-500/30 cursor-pointer"
